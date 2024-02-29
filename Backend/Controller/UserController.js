@@ -3,7 +3,7 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 app.use(cors());
-const UserSchema = require("./data/UserSchema");
+const UserSchema = require("../Schema/UserSchema");
 
 const getAllUser = async (req, res) => {
   try {
