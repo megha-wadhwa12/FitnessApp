@@ -49,7 +49,7 @@ FitHub is a prototype designed to promote healthy living and empower individuals
    - Simulate authentication with fake user data or skip authentication for simplicity.
 
 4. **User Interface**:
-   - Design a clean and responsive user interface using CSS frameworks like Bootstrap or Tailwind CSS.
+   - Design a clean and responsive user interface using CSS frameworks like ChakraUI or Tailwind CSS.
    - Focus on usability and intuitive navigation.
 
 5. **Testing**:
