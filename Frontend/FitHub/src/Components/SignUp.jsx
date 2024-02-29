@@ -78,7 +78,6 @@ const SignUp = () => {
                             </VStack>
                         </form>
                     </Box>
-
                 </Box>
             </Flex>
         </Box>
