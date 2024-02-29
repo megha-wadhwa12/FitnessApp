@@ -4,7 +4,7 @@ const app = express()
 const router = express.Router()
 require("dotenv").config()
 app.use(express.json())
-const { getAllUser,getOneUser,addUserData} = require('./UserController')
+const { getAllUser,getOneUser,addUserData} = require('../Controller/UserController')
 
 async function connect(){
     await mongoose.connect(process.env.mongoUrl)
