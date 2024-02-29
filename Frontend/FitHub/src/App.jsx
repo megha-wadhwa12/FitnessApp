@@ -1,3 +1,4 @@
+
 import './App.css'
 import Login from './Components/Login'
 import AllRoutes from './Components/Routes/AllRoutes'
@@ -8,6 +9,8 @@ function App() {
   return (
     <>
       <AllRoutes/>
+    <Diary/>
+
     </>
   )
 }
