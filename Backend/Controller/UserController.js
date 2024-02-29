@@ -1,6 +1,5 @@
 const mongoose = require("mongoose");
 const express = require("express");
-const jwt = require("jsonwebtoken")
 const app = express();
 const cors = require("cors");
 app.use(cors());
@@ -47,11 +46,8 @@ const addUserData = async (req, res) => {
       Password
     });
 
-    if (createUserData) {
-      const { Username, Name } = createUserData;
-      const token = jwt.sign({ username: Username }, process.env.SECRET_KEY);
-      console.log(token);
-      res.status(201).json({ token,Name}); 
+    if (createUserData) {  
+      res.status(201).json("Created"); 
     } else {
       res.status(400).json({ message: "Error while creating new user" });
     }
