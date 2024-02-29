@@ -63,5 +63,5 @@ FitHub is a prototype designed to promote healthy living and empower individuals
 - Add more comprehensive statistics and visualization options using charting libraries like Chart.js or D3.js.
 - Expand community features with user-generated challenges and social interactions.
 
-Flow chart - 
+
 ![flow](https://i.ibb.co/Fq2g56x/Untitled-2024-02-29-1826.png)
