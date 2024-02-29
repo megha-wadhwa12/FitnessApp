@@ -7,6 +7,7 @@ const Home = () => {
     <div>
       <Button as={Link} to="/login">Login</Button>
       <Button as={Link} to="/signup">Sign Up</Button>
+      <Button as={Link} to="/diary">Diary</Button>
     </div>
 
   )
