@@ -3,6 +3,7 @@ const mongoose = require("mongoose");
 const { router } = require("./Routers/UserRouter");
 require("dotenv").config();
 
+console.log(process.env.mongoUrl)
 const app = express();
 app.use(express.json());
 
