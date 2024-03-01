@@ -1,12 +1,20 @@
-import React from 'react'
-import Home from './Components/Home'
-import Footer from './Components/Footer'
+
+
+import './App.css'
+import Login from './Components/Login'
+import AllRoutes from './Components/Routes/AllRoutes'
+import Diary from './Components/Diary'
+import SignUp from './Components/SignUp'
+
+function App() {
 
 const App = () => {
   return (
     <>
-      <Home />
+//       <Home />
       <Footer />
+      <AllRoutes/>
+
     </>
   )
 }

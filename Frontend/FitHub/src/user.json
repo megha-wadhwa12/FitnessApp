@@ -1,0 +1,46 @@
+[{
+    "Name": "SP Jyotiranjan",
+    "Email": "sp577152@gmail.com",
+    "Password": "dawdaw@1213",
+    "FoodsIntake": ["Chicken Tikka Masala","Palak Paneer","Samosa"],
+    "Exercises": [200,350,221],
+    "Goal": 2400,
+    "Username": "spjyotiranjan"
+   },
+   {
+    "Name": "Megha Wadhwa",
+    "Email": "meghawadhwa20@gmail.com",
+    "Password": "dawdaw@1213",
+    "FoodsIntake": ["Naan","Butter Chicken","Chana Masala"],
+    "Exercises": [101,451,121],
+    "Goal": 2000,
+    "Username": "meghawadhwa"
+   },
+   {
+    "Name": "Shivanghi jain",
+    "Email": "shivanghi@gmail.com",
+    "Password": "dawdaw@1213",
+    "FoodsIntake": ["Dal Makhani","Vegetable Biryani","Aloo Gobi"],
+    "Exercises": [220,451,21],
+    "Goal": 2323,
+    "Username": "shivanghi"
+   },
+   {
+    "Name": "Rajashree",
+    "Email": "rajashree@gmail.com",
+    "Password": "dawdaw@1213",
+    "FoodsIntake": ["Paneer Tikka","Raita","Pani Puri"],
+    "Exercises": [230,316,218],
+    "Goal": 1800,
+    "Username": "rajashree"
+   },
+   {
+    "Name": "Mukund Madhav",
+    "Email": "mukund@gmail.com",
+    "Password": "dawdaw@1213",
+    "FoodsIntake": ["Masala Dosa","Gulab Jamun","Pav Bhaji"],
+    "Exercises": [205,329,240],
+    "Goal": 2200,
+    "Username": "mukund"
+   }
+]
