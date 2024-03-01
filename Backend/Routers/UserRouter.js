@@ -10,6 +10,8 @@ async function connect(){
     await mongoose.connect(process.env.mongoUrl)
 }
 
+
+
 connect()
 .then(() => {
     console.log("Connected to Database!!!")
@@ -17,9 +19,9 @@ connect()
     console.log("Error Connecting to Database!!!")
 })
 
+
 router.get('/userdata',getAllUser)
 router.get('userdata/:id',getOneUser)
-router.post('/auth', addUserData)
-
+router.post('/posting', addUserData)
 
 module.exports = {router}

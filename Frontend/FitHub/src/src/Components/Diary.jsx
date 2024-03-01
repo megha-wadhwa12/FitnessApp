@@ -53,12 +53,12 @@ const Diary = () => {
     userData.forEach((e) => {
       if (e.Username === username) {
         setUser(e);
-        setUserUpdated(true);
       }
     });
   }, []);
   useEffect(() => {
     setDetails(user, foodjson);
+    setUserUpdated(true);
   }, [user]);
   return (
     <Flex
@@ -107,19 +107,19 @@ const Diary = () => {
                 </CircularProgressLabel>
               </CircularProgress>
               <Flex direction={"column"} align={"start"}>
-                <Flex direction={"column"} mb={"0.5vw"} align={'start'}>
+                <Flex direction={"column"} mb={"0.5vw"}>
                   <Text fontWeight={"bold"} fontSize={"1.5vw"}>
                     Goal Calories
                   </Text>
                   <Text fontSize={"1.2vw"}>{user.Goal} kcal</Text>
                 </Flex>
-                <Flex direction={"column"} mb={"0.5vw"} align={'start'}>
+                <Flex direction={"column"} mb={"0.5vw"}>
                   <Text fontWeight={"bold"} fontSize={"1.5vw"}>
                     Calories Intake
                   </Text>
                   <Text fontSize={"1.2vw"}>{activity.calGained} kcal</Text>
                 </Flex>
-                <Flex direction={"column"} mb={"0.5vw"} align={'start'}>
+                <Flex direction={"column"} mb={"0.5vw"}>
                   <Text fontWeight={"bold"} fontSize={"1.5vw"}>
                     Physical Activities
                   </Text>
@@ -202,7 +202,6 @@ const Diary = () => {
           borderRadius={"lg"}
           border={"1px solid white"}
           direction={"column"}
-          align="start"
           w={"33%"}
           p={"1vw"}
           boxShadow={"0 0 1vw #00000025"}
@@ -248,14 +247,7 @@ const Diary = () => {
         </Flex>
       </Flex>
 
-      <Flex
-        w={"100% - 3vw"}
-        h={"20vh"}
-        my={"2vw"}
-        mx={"1vw"}
-        borderRadius={"lg"}
-        boxShadow={"0 0 1vw #00000025"}
-      ></Flex>
+      <Flex w={"100% - 3vw"} h={"20vh"} my={'2vw'} mx={'1vw'} borderRadius={'lg'} boxShadow={'0 0 1vw #00000025'}></Flex>
     </Flex>
   );
 };

@@ -1,8 +1,10 @@
+
 const mongoose = require("mongoose");
 const express = require("express");
 const app = express();
 const cors = require("cors");
 app.use(cors());
+
 const UserSchema = require("../Schema/UserSchema");
 
 const getAllUser = async (req, res) => {
@@ -21,14 +23,12 @@ const getOneUser = async (req, res) => {
     if (!oneUser) {
       return res.status(404).json({ message: "User not found" });
     }
-    res.status(200).json({ message: `See user for ${req.params.id}`, oneUser });
+    res.status(200).json({ message: `See user for ${req.params.id}`, user: oneUser });
   } catch (error) {
     console.log("error", error);
     res.status(500).json({ message: "Error fetching single user" });
   }
 };
-
-
 
 const addUserData = async (req, res) => {
   try {
@@ -39,21 +39,27 @@ const addUserData = async (req, res) => {
       throw new Error("Enter all fields");
     }
 
+    const existingUser = await UserSchema.findOne({ Email_id });
+
+    if (existingUser) {
+      res.status(400).json({ message: "Email already exists" });
+      return;
+    }
+
     const createUserData = await UserSchema.create({
       Name,
       Username,
       Email_id,
-      Password
+      Password,
     });
 
-    if (createUserData) {  
-      res.status(201).json("Created"); 
+    if (createUserData) {
+      res.status(201).json(createUserData);
     } else {
       res.status(400).json({ message: "Error while creating new user" });
     }
-
   } catch (error) {
-    console.log("error", error);
+    console.error("Error in addUserData:", error);
     res.status(500).json({ message: "Error while creating" });
   }
 };
