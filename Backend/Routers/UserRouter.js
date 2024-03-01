@@ -10,7 +10,6 @@ async function connect(){
     await mongoose.connect(process.env.mongoUrl)
 }
 
-
 connect()
 .then(() => {
     console.log("Connected to Database!!!")
