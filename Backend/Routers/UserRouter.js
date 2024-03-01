@@ -19,7 +19,7 @@ connect()
 
 router.get('/userdata',getAllUser)
 router.get('userdata/:id',getOneUser)
-router.post('/auth', addUserData)
+router.post('/posting', addUserData)
 
 
 module.exports = {router}
