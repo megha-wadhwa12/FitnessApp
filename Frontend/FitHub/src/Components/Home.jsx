@@ -17,6 +17,7 @@ import Navbar from "./Navbar";
 
 const Home = () => {
   return (
+
     <Box>
       {/* <Navbar /> */}
       <Flex gap={10} mt={10}>
@@ -56,5 +57,6 @@ const Home = () => {
     </Box>
   );
 };
+
 
 export default Home;
