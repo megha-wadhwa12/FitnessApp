@@ -1,4 +1,5 @@
 
+
 import './App.css'
 import Login from './Components/Login'
 import AllRoutes from './Components/Routes/AllRoutes'
@@ -7,8 +8,11 @@ import SignUp from './Components/SignUp'
 
 function App() {
 
+const App = () => {
   return (
     <>
+//       <Home />
+      <Footer />
       <AllRoutes/>
 
     </>
