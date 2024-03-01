@@ -21,5 +21,4 @@ router.get('/userdata',getAllUser)
 router.get('userdata/:id',getOneUser)
 router.post('/posting', addUserData)
 
-
 module.exports = {router}
