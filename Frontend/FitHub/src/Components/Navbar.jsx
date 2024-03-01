@@ -13,15 +13,15 @@ import Theme from "./Theme";
 const Navbar = () => {
   return (
     <div>
-      <Flex py={5} px={20}>
-        <Image src={Logo} alt="logo" width={"90px"} height={"50px"} />
+      <Flex p={5} px={20}>
+        <Image src={Logo} alt="logo" width={"80px"} height={"40px"}/>
+
         <Box
           m={"auto"}
           color={Theme.colors.primary[100]}
           fontFamily="pages"
           fontSize="md"
           display={{ base: "none", md: "block" }}
-          mt={1}
         >
           <Link href={"/"} mr="5">
             HOME
