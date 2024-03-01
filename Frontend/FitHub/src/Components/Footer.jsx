@@ -18,6 +18,7 @@ const Footer = () => {
         fontSize={"16px"}
         gap={"140px"}
         justifyContent={"center"}
+        
       >
         {/* Section: More About Weird Wardrobe */}
         <Flex flexDirection="column">
