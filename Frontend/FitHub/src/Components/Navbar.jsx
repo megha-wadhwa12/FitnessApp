@@ -15,6 +15,7 @@ const Navbar = () => {
     <div>
       <Flex p={5} px={20}>
         <Image src={Logo} alt="logo" width={"80px"} height={"40px"}/>
+
         <Box
           m={"auto"}
           color={Theme.colors.primary[100]}
@@ -40,39 +41,45 @@ const Navbar = () => {
               className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
             >
               <li>
-                <a>Calories Tracker</a>
+                <Link href={"/diary"} mr="5">
+                  Calories Tracker
+                </Link>
               </li>
               <li>
-                <a>Personalised Dashboard</a>
+                <Link href={"/dashboard"}>Personalised Dashboard</Link>
+              </li>
+              <li>
+                <Link href={"/diary"} mr="5">
+                  Activity Logger
+                </Link>
               </li>
               <li>
                 <a>Fitness Goals</a>
-              </li>
-              <li>
-                <a>Activity Logger</a>
               </li>
             </ul>
           </div>
         </Box>
         {/* Login button */}
-        <Button
-          color="white"
-          bg={Theme.colors.primary[100]}
-          borderWidth="2px"
-          borderColor={Theme.colors.primary[100]}
-          borderRadius="4px"
-          _hover={{
-            color: "white",
-            bg: Theme.colors.primary[100],
-            borderColor: Theme.colors.primary[100],
-            boxShadow: useColorModeValue(
-              "0px 0.25rem 0.75rem 0px rgb((203,155,133) / 26%)",
-              "0px 0.25rem 0.75rem 0px rgb((203,155,133) / 26%)"
-            ),
-          }}
-        >
-          LOGIN
-        </Button>
+        <Link href={"/login"}>
+          <Button
+            color="white"
+            bg={Theme.colors.primary[100]}
+            borderWidth="2px"
+            borderColor={Theme.colors.primary[100]}
+            borderRadius="4px"
+            _hover={{
+              color: "white",
+              bg: Theme.colors.primary[100],
+              borderColor: Theme.colors.primary[100],
+              boxShadow: useColorModeValue(
+                "0px 0.25rem 0.75rem 0px rgb((203,155,133) / 26%)",
+                "0px 0.25rem 0.75rem 0px rgb((203,155,133) / 26%)"
+              ),
+            }}
+          >
+            LOGIN
+          </Button>
+        </Link>
       </Flex>
     </div>
   );

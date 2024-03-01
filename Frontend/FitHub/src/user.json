@@ -5,7 +5,11 @@
     "FoodsIntake": ["Chicken Tikka Masala","Palak Paneer","Samosa"],
     "Exercises": [200,350,221],
     "Goal": 2400,
-    "Username": "spjyotiranjan"
+    "MacrosGoal": {"protein": 140,"fat": 90,"carbs": 168},
+    "Username": "spjyotiranjan",
+    "bmi": 25.5,
+    "Plan": "Maintain",
+    "stepGoal": 10000
    },
    {
     "Name": "Megha Wadhwa",
@@ -14,7 +18,11 @@
     "FoodsIntake": ["Naan","Butter Chicken","Chana Masala"],
     "Exercises": [101,451,121],
     "Goal": 2000,
-    "Username": "meghawadhwa"
+    "MacrosGoal": {"protein": 120,"fat": 67,"carbs": 130},
+    "Username": "meghawadhwa",
+    "bmi": 21.3,
+    "Plan": "Loss",
+    "stepGoal": 8000
    },
    {
     "Name": "Shivanghi jain",
@@ -23,7 +31,11 @@
     "FoodsIntake": ["Dal Makhani","Vegetable Biryani","Aloo Gobi"],
     "Exercises": [220,451,21],
     "Goal": 2323,
-    "Username": "shivanghi"
+    "MacrosGoal": {"protein": 130,"fat": 70,"carbs": 130},
+    "Username": "shivanghi",
+    "bmi": 26.8,
+    "Plan": "Loss",
+    "stepGoal": 11000
    },
    {
     "Name": "Rajashree",
@@ -32,7 +44,11 @@
     "FoodsIntake": ["Paneer Tikka","Raita","Pani Puri"],
     "Exercises": [230,316,218],
     "Goal": 1800,
-    "Username": "rajashree"
+    "MacrosGoal": {"protein": 120,"fat": 75,"carbs": 130},
+    "Username": "rajashree",
+    "bmi": 19.2,
+    "Plan": "Gain",
+    "stepGoal": 7000
    },
    {
     "Name": "Mukund Madhav",
@@ -41,6 +57,10 @@
     "FoodsIntake": ["Masala Dosa","Gulab Jamun","Pav Bhaji"],
     "Exercises": [205,329,240],
     "Goal": 2200,
-    "Username": "mukund"
+    "MacrosGoal": {"protein": 130,"fat": 80,"carbs": 160},
+    "Username": "mukund",
+    "bmi": 20.1,
+    "Plan": "Gain",
+    "stepGoal": 9000
    }
 ]

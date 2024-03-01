@@ -1,5 +1,7 @@
 # FitHub Prototype
 
+### Deployment link - https://fithub-hackathon.netlify.app/
+
 ## Problem Statement
 
 - ID: CBP25
@@ -62,3 +64,4 @@ FitHub is a prototype designed to promote healthy living and empower individuals
 - Enhance activity tracking with support for additional types of activities and integration with fitness APIs.
 - Add more comprehensive statistics and visualization options using charting libraries like Chart.js or D3.js.
 - Expand community features with user-generated challenges and social interactions.
+

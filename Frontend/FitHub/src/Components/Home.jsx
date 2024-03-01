@@ -18,10 +18,12 @@ import About from "./About";
 
 const Home = () => {
   return (
+
     <Box>
-      <Navbar />
       <Flex gap={0} bg={Theme.colors.primary[100]} pt={5}>
         <Box ml={"180px"}>
+      {/* <Navbar /> */}
+  
           <Text
             // alignSelf="flex-start"
             mt={100}
@@ -35,6 +37,7 @@ const Home = () => {
             The only hub for your total fitness !!
           </Text>
           <Button
+
             color={Theme.colors.primary[100]}
             bg="white"
             borderWidth="2px"
@@ -51,12 +54,14 @@ const Home = () => {
               ),
             }}
           >
+
             Explore Now
           </Button>
         </Box>
         <Image src={VectorImage} width={600} height={500}/>
       </Flex>
       <About />
+
     </Box>
   );
 };

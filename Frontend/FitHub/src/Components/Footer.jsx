@@ -20,6 +20,7 @@ const Footer = () => {
         gap={"140px"}
         justifyContent={"center"}
         py={20}
+
       >
         {/* Section: More About Weird Wardrobe */}
         <Flex flexDirection="column">
