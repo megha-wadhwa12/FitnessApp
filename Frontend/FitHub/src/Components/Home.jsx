@@ -8,6 +8,7 @@ const Home = () => {
       <Button as={Link} to="/login">Login</Button>
       <Button as={Link} to="/signup">Sign Up</Button>
       <Button as={Link} to="/diary">Diary</Button>
+      <Button as={Link} to="/dashboard">Dashboard</Button>
     </div>
 
   )
