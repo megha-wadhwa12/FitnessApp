@@ -17,6 +17,7 @@ connect()
     console.log("Error Connecting to Database!!!")
 })
 
+
 router.get('/userdata',getAllUser)
 router.get('userdata/:id',getOneUser)
 router.post('/posting', addUserData)
